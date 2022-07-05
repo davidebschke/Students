@@ -32,13 +32,12 @@ public abstract class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "iD=" + iD +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", age=" + age +
-                ", course='" + course + '\'' +
-                '}';
+        return "Student " +
+                "iD = " + iD +"\n"+
+                "firstname = " + firstname + '\n' +
+                "lastname = " + lastname + '\n' +
+                "age = " + age + "\n"+
+                "course = " + course + '\n' ;
     }
 
 public abstract String getiD2();

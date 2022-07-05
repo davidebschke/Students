@@ -1,6 +1,6 @@
 
 
-public class PhysicStudents extends Student {
+public class PhysicStudents extends  Student implements Citizen{
 
     public PhysicStudents(String iD, String firstname, String lastname, int age, String course, String areaOfExpertise) {
         super(iD, firstname, lastname, age, course);
@@ -13,6 +13,8 @@ public class PhysicStudents extends Student {
     }
 
     String areaOfExpertise;
+    String Adress;
+    int IdentityCard;
 
     public String getAreaOfExpertise() {
         return areaOfExpertise;
@@ -23,5 +25,17 @@ public class PhysicStudents extends Student {
     }
 
 
+    @Override
+    public String getAdress() {
+        return Adress;
+    }
+
+    @Override
+    public int getIdentityCardNumber() {
+
+
+        return IdentityCard;
+    }
 }
+
 
