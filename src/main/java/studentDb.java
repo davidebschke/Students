@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class studentDb {
 
-    private Student[] allstudents;
+     ArrayList allstudents;
 
-    public studentDb(Student[] allstudents) {
+    public  studentDb (ArrayList allstudents) {
         this.allstudents = allstudents;
 
 
@@ -14,8 +17,8 @@ public class studentDb {
         return new Student[0];
     }
 
-    public Student randomStudent(){
-        int randomIndex=(int) (Math.random() * allstudents.length);
-        return allstudents[randomIndex];
+    public ArrayList randomStudent(){
+        int randomIndex=(int) (Math.random() * allstudents.size());
+        return allstudents;
     }
 }
