@@ -1,24 +1,23 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
+
 
 public class studentDb {
 
-     ArrayList allstudents;
 
-    public  studentDb (ArrayList allstudents) {
-        this.allstudents = allstudents;
+     HashMap<String,String[]> allStudents =new HashMap<>();
+
+    public  studentDb (HashMap allStudents) {
+        this.allStudents = allStudents;
 
 
     }
 
-    public Student[] getAllStudents() {
-
-
-        return new Student[0];
+    public HashMap<String, String[]> getAllStudents() {
+        return allStudents;
     }
 
-    public ArrayList randomStudent(){
-        int randomIndex=(int) (Math.random() * allstudents.size());
-        return allstudents;
+    public HashMap<String, String[]> randomStudent(){
+        int randomIndex=(int) (Math.random() * allStudents.size());
+        return allStudents;
     }
 }
